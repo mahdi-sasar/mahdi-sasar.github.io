@@ -5,4 +5,4 @@ Despite the fact that a personal website is supposed to give an overview of one'
 The website is currently under construction. The rest is to follow (hopefully) very quickly.
 
 The following is a text to see if LaTeX is supported in this environment:
-$$ H = H_{0} + V $$
+$$H = H_{0} + V$$
