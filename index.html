@@ -7,8 +7,10 @@
     
     <!-- Include IBM Plex Sans font from Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap">
-    
-    
+    <!--End of the New Font--> 
+    <!--Google Scholar Icon-->
+    <title>Google Scholar Icon Link</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reset default margin and padding */
         body, h1, p {
@@ -43,7 +45,6 @@
             text-align: justify;
             font-family: 'IBM Plex Sans', sans-serif; /* Use IBM Plex Sans font */
         }
-        
         /* Space for images on the right */
         .image-space {
             flex: 0 0 500px;
@@ -58,6 +59,30 @@
         /* Place contact info at the bottom of the colored bar. */
         .contact-info {
            margin-top: auto;
+        }
+        .larger-text01 {
+            font-size: 24px;
+        }
+        .distance-top {
+            margin-top: 25px;
+        }
+        .spaced-sentence {
+            margin-left: 20px;
+        }
+        /* Style for the Google icon as a substitute for the Google Scholar icon */
+        /*.scholar-icon {
+        /*    color: #4285F4; /* Google blue color */
+        /*    font-size: 24px; /* Adjust the font size as needed */
+        /*    margin-right: 8px; /* Add space between the icon and the text */
+        /*}
+
+        /* Style for the icon with custom font size */
+        .custom-icon-size {
+            font-size: 20px; /* Adjust the font size as needed */
+        }
+        /* Style for the icon with custom color */
+        .custom-icon-color {
+            color: #ff9c33; /* Change to the desired color value */
         }
     </style>
 
@@ -85,26 +110,41 @@
         </script>
     To enhance the loading of the equations, I decided to add an offline version of MathJax.
     -->
-
 </head>
+
 <body>
     <div class="container">
         <div class="colored-bar">
-            <p>
-                CV
+            <p class="distance-top">
+                <b><span class="larger-text01"> Table of Contents</span></b>
             </p>
-            <p>
-                Scientific Works
+            <p class="spaced-sentence">
+                <a href="CV.html">CV</a>
             </p>
-            <p>
-                Scientific Blog Posts
+            <p class="spaced-sentence">
+                <a href="Publications.html">Publications</a>
+            </p>
+            <p class="spaced-sentence">
+                <a href="Scientific_Works.html">Scientifc Works</a>
+            </p>
+            <p class="spaced-sentence">
+                <a href="Scientific_Blog.html">Scientific Blog Posts</a>
             </p>
             <p class="contact-info">
-                Mahdi Sasar: mahdi.sasar@icho.edu.pl 
+                <p>
+                    Follow my research on <a href="https://scholar.google.com/citations?user=0Yy9QA8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google custom-icon-size custom-icon-color"></i></a>
+                </p>
+                <p>
+                    LinkedIn <a href="https://www.linkedin.com/in/mahdi-sasar-b81101164/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in custom-icon-size custom-icon-color"></i></a>
+                </p>
+                <p>
+                    X (aka Twitter) <a href="https://www.x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter custom-icon-size custom-icon-color"></i></a>
+                </p>
+                Email: mahdi.sasar@icho.edu.pl 
             </p>
         </div>
-        <div class="content">
-            <h1>Mahdi Sasar</h1>
+    <div class="content">
+            <h1>Mahdi Sasar's Personal Homepage</h1>
             <p>
                 My personal website containing a bio, my past and present research in physics and blog posts explaining different scientific ideas.
                 <br><br>
@@ -128,6 +168,7 @@
             </p>
         </div>
         <div class="image-space">
+            <p class="distance-top"></p>
             <img src="Images/Main_Profile_Picture.png" alt="Profile Picture">
         </div>
     </div>
