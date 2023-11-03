@@ -92,6 +92,31 @@
         .custom-icon-color {
             color: #ff9c33; /* Change to the desired color value */
         }
+        /* Mobile styles (up to 768px width) */
+    @media (max-width: 768px) {
+        /* Fluid layout for smaller screens */
+            body {
+                font-size: 16px; /* Set a base font size */
+                line-height: 1.5;
+                margin: 0;
+                padding: 10px;
+            }
+            /* Mobile-friendly fonts */
+            p, h1, h2, h3 {
+                font-family: 'Arial', sans-serif;
+            }
+        /* Touch-friendly navigation */
+            a {
+                display: block;
+                padding: 10px;
+                text-align: center;
+            }
+        /* Responsive images and videos */
+            img, video {
+                max-width: 100%;
+                height: auto;
+            }
+        }   
     </style>
 
     <!-- Include MathJax library -->
