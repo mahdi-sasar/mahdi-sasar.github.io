@@ -21,7 +21,7 @@
         
         /* Overall layout */
         .container {
-            flex: 0 1;
+            flex: 1 1;
             display: flex;
             align-items: stretch;
             height: 100vh;
@@ -36,8 +36,7 @@
             padding: 10px;
             background-color: #0cbc6a; /* Change to your preferred color */
             font-family: 'IBM Plex Sans', sans-serif; /* Use IBM Plex Sans font */
-        }
-        
+        }     
         /* Text content in the middle */
         .content {
             flex: 1 1;
@@ -45,7 +44,6 @@
             background-color: #f1f1f1;
             text-align: justify;
             font-family: 'IBM Plex Sans', sans-serif; /* Use IBM Plex Sans font */
-            min-height: 100%;
         }
         /* Space for images on the right */
         .image-space {
@@ -92,34 +90,7 @@
         .custom-icon-color {
             color: #ff9c33; /* Change to the desired color value */
         }
-    /* Mobile styles (up to 768px width) */
-    @media (max-width: 768px) {
-        /* Fluid layout for smaller screens */
-            body {
-                font-size: 16px; /* Set a base font size */
-                line-height: 1.5;
-                margin: 0;
-                padding: 10px;
-            }
-            /* Mobile-friendly fonts */
-            p, h1, h2, h3 {
-                font-family: 'Arial', sans-serif;
-            }
-        /* Touch-friendly navigation */
-            a {
-                display: block;
-                padding: 10px;
-                text-align: center;
-            }
-        /* Responsive images and videos */
-            img, video {
-                max-width: 100%;
-                height: auto;
-            }
-        } 
-  
     </style>
-
     <!-- Include MathJax library -->
     <script type="text/javascript" src="MathJax-master/es5/tex-chtml.js"></script>
     <script type="text/javascript">
@@ -130,20 +101,6 @@
             }
         };
     </script>
-    <!--
-        <script>
-            MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
-                },
-            };
-        </script>
-        <script type="text/javascript" id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-        </script>
-    To enhance the loading of the equations, I decided to add an offline version of MathJax.
-    -->
 </head>
 
 <body>
@@ -182,28 +139,25 @@
         </div>
     <div class="content">
             <h1>Mahdi Sasar's Personal Homepage</h1>
-            <p>
-                I am Mahdi Sasar and welcome to my website. I have a PhD in solid state physics, with deep interest in the theory <b>and</b> the experimental side of this discipline.
-            </p>
-            <p>
-                This page contains a bio, my past and present research in physics and blog posts explaining different scientific ideas.
-            </p>
-            <p>
-                Despite the fact that a personal website is supposed to give an overview of one's professional capabilities (i.e. a verbose version of a CV), an important feature of this personal website will be, I hope, the scientific blogging aspect of it.
-                I like trying to explain difficult concepts in physics using analogies and simpler underlying concepts. Such explanations benefit both the <i>explainer</i> and the <i>explainee</i>(!) by placing the concept on firm foundations.
-            </p>
-            <p>
-                <br>
-                <br>
-            </p>
-            <p>
-                This website is currently under construction. The rest is to follow (hopefully) very quickly.
-            </p>
-        </div>
-        <div class="image-space">
-            <p class="distance-top"></p>
-            <img src="Images/Main_Profile_Picture.png" alt="Profile Picture">
-        </div>
+                <p>
+                    I am Mahdi Sasar and welcome to my website. I have a PhD in solid state physics, with deep interest in the theory <b>and</b> the experimental side of this discipline.
+                </p>
+                <p>
+                    This page contains a bio, my past and present research in physics and blog posts explaining different scientific ideas.
+                </p>
+                <p>
+                    Despite the fact that a personal website is supposed to give an overview of one's professional capabilities (i.e. a verbose version of a CV), an important feature of this personal website will be, I hope, the scientific blogging aspect of it.
+                    I like trying to explain difficult concepts in physics using analogies and simpler underlying concepts. Such explanations benefit both the <i>explainer</i> and the <i>explainee</i>(!) by placing the concept on firm foundations.
+                </p>
+                <p>
+                </p>
+                <p>
+                    This website is currently under construction. The rest is to follow (hopefully) very quickly.
+                </p>
+    </div>
+    <div class="image-space">
+    <p class="distance-top"></p>
+    <img src="Images/Main_Profile_Picture.png" alt="Profile Picture">
     </div>
 </body>
 </html>
