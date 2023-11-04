@@ -82,6 +82,23 @@
         /*    font-size: 24px; /* Adjust the font size as needed */
         /*    margin-right: 8px; /* Add space between the icon and the text */
         /*}
+        /* Style the primary link */
+        .menu a {
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        /* Style the sublinks and hide them initially */
+        .menu .sublinks {
+            list-style: none;
+            display: none;
+            padding-left: 25px;
+        }
+
+        /* Show the sublinks when the primary link is clicked (JavaScript) */
+        .menu.open .sublinks {
+            display: block;
+        }
 
         /* Style for the icon with custom font size */
         .custom-icon-size {
@@ -121,7 +138,14 @@
                 <a href="Publications.html">Publications</a>
             </p>
             <p class="spaced-sentence01">
-                <a href="Scientific_Blog.html">Scientific Blog Posts</a>
+                <div class="menu">
+                    <a href=#><u>Scientific Blog Posts</u> &#9662;</a> <!-- &#9662; is the down arrow character -->
+                    <ul class="sublinks">
+                        <li><a href="#">Sublink 1</a></li>
+                        <li><a href="#">Sublink 2</a></li>
+                        <li><a href="#">Sublink 3</a></li>
+                    </ul>
+                </div>
             </p>
             <p class="contact-info">
                 <p>
@@ -144,7 +168,7 @@
                             <li>
                                 Postdoctoral researcher
                                 <p>
-                                    Institute of Organic Chemistry, Polish Academy of Sciences, <b>Dec., 2021 - Now</b>
+                                    Institute of Organic Chemistry, Polish Academy of Sciences, <b>Dec. 2021 - Now</b>
                                 </p>
                             </li>
                         </ul>
@@ -180,5 +204,11 @@
             <img src="Images/Main_Profile_Picture.png" alt="Profile Picture">
         </div>
     </div>
+    <script>
+        document.querySelector('.menu a').addEventListener('click', function() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

@@ -92,6 +92,23 @@
         .custom-icon-color {
             color: #ff9c33; /* Change to the desired color value */
         }
+        /* Style the primary link */
+                .menu a {
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        /* Style the sublinks and hide them initially */
+        .menu .sublinks {
+            list-style: none;
+            display: none;
+            padding-left: 25px;
+        }
+
+        /* Show the sublinks when the primary link is clicked (JavaScript) */
+        .menu.open .sublinks {
+            display: block;
+        }
     </style>
 
     <!-- Include MathJax library -->
@@ -122,7 +139,14 @@
                 <a href="Publications.html">Publications</a>
             </p>
             <p class="spaced-sentence01">
-                <a href="Scientific_Blog.html">Scientific Blog Posts</a>
+                <div class="menu">
+                    <a href=#><u>Scientific Blog Posts</u> &#9662;</a> <!-- &#9662; is the down arrow character -->
+                    <ul class="sublinks">
+                        <li><a href="#">Sublink 1</a></li>
+                        <li><a href="#">Sublink 2</a></li>
+                        <li><a href="#">Sublink 3</a></li>
+                    </ul>
+                </div>
             </p>
             <p class="contact-info">
                 <p>
@@ -299,5 +323,11 @@
             <img src="Images/Main_Profile_Picture.png" alt="Profile Picture">
         </div>
     </div>
+    <script>
+        document.querySelector('.menu a').addEventListener('click', function() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

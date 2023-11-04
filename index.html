@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahdi Sasar | Personal Homepage</title>
-    
     <!-- Include IBM Plex Sans font from Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap">
     <!--End of the New Font--> 
@@ -90,7 +89,25 @@
         .custom-icon-color {
             color: #ff9c33; /* Change to the desired color value */
         }
+        /* Style the primary link */
+        .menu a {
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        /* Style the sublinks and hide them initially */
+        .menu .sublinks {
+            list-style: none;
+            display: none;
+            padding-left: 25px;
+        }
+
+        /* Show the sublinks when the primary link is clicked (JavaScript) */
+        .menu.open .sublinks {
+            display: block;
+        }
     </style>
+
     <!-- Include MathJax library -->
     <script type="text/javascript" src="MathJax-master/es5/tex-chtml.js"></script>
     <script type="text/javascript">
@@ -119,7 +136,14 @@
                 <a href="Publications.html">Publications</a>
             </p>
             <p class="spaced-sentence01">
-                <a href="Scientific_Blog.html">Scientific Blog Posts</a>
+                <div class="menu">
+                    <a href=#><u>Scientific Blog Posts</u> &#9662;</a> <!-- &#9662; is the down arrow character -->
+                    <ul class="sublinks">
+                        <li><a href="#">Sublink 1</a></li>
+                        <li><a href="#">Sublink 2</a></li>
+                        <li><a href="#">Sublink 3</a></li>
+                    </ul>
+                </div>
             </p>
             <p class="contact-info">
                 <p>
@@ -131,9 +155,9 @@
                     <a href="https://www.x.com/MahdiSasar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter custom-icon-size custom-icon-color spaced-sentence02"></i></a>
                     <a href="https://github.com/mahdi-sasar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github custom-icon-color custom-icon-size spaced-sentence02"></i></a>
                 </p>
-                Email: mahdi.sasar@icho.edu.pl 
+                Email: mahdi.sasar@icho.edu.pl
             </p>
-        </div>
+            </div>        
     <div class="content">
             <h1>Mahdi Sasar's Personal Homepage</h1>
                 <p>
@@ -151,10 +175,16 @@
                 <p>
                     This website is currently under construction. The rest is to follow (hopefully) very quickly.
                 </p>
-    </div>
+            </div>
     <div class="image-space">
     <p class="distance-top"></p>
     <img src="Images/Main_Profile_Picture.png" alt="Profile Picture">
     </div>
+    <script>
+        document.querySelector('.menu a').addEventListener('click', function() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
