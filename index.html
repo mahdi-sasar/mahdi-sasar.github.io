@@ -20,7 +20,7 @@
         
         /* Overall layout */
         .container {
-            flex: 1 1;
+            flex: 1 1   100vh;
             display: flex;
             align-items: stretch;
             height: 100vh;
@@ -28,25 +28,25 @@
         
         /* Colored bar on the left */
         .colored-bar {
-            flex: 0 0 240px;
+            flex: 1 1   2vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 10px;
+            padding: 2vh;
             background-color: #0cbc6a; /* Change to your preferred color */
             font-family: 'IBM Plex Sans', sans-serif; /* Use IBM Plex Sans font */
         }     
         /* Text content in the middle */
         .content {
-            flex: 1 1;
-            padding: 40px;
+            flex: 1 1   78vh;
+            padding: 5vh;
             background-color: #f1f1f1;
             text-align: justify;
             font-family: 'IBM Plex Sans', sans-serif; /* Use IBM Plex Sans font */
         }
         /* Space for images on the right */
         .image-space {
-            flex: 0 0 400px;
+            flex: 1 1   20vh;
             background-color: #f1f1f1; /* Change to your preferred color */
             text-align: center;
         }
