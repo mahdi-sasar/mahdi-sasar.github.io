@@ -29,27 +29,31 @@
         
         /* Colored bar on the left */
         .colored-bar {
-            flex: 1 1   2vh;
+            flex: 0 0   17%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 2vh;
+            padding: 1%;
+            align-items: stretch;
             background-color: #0cbc6a; /* Change to your preferred color */
             font-family: 'IBM Plex Sans', sans-serif; /* Use IBM Plex Sans font */
         }     
         /* Text content in the middle */
         .content {
-            flex: 1 1   78vh;
-            padding: 5vh;
+            flex: 0 0   54%;
+            padding: 2%;
             background-color: #f1f1f1;
             text-align: justify;
+            align-items: stretch;
             font-family: 'IBM Plex Sans', sans-serif; /* Use IBM Plex Sans font */
         }
         /* Space for images on the right */
         .image-space {
-            flex: 1 1   20vh;
+            flex: 0 0   23%;
             background-color: #f1f1f1; /* Change to your preferred color */
             text-align: center;
+            align-items: stretch;
+
         }
         /* Setting the size of the profile image. */
         .image-space img {
