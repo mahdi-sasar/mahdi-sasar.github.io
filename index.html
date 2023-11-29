@@ -45,6 +45,7 @@
             text-align: justify;
             align-items: stretch;
             font-family: 'IBM Plex Sans', sans-serif; /* Use IBM Plex Sans font */
+            overflow: auto;
         }
         /* Space for images on the right */
         .image-space {
@@ -52,12 +53,23 @@
             background-color: #f1f1f1; /* Change to your preferred color */
             text-align: center;
             align-items: stretch;
-
         }
         /* Setting the size of the profile image. */
         .image-space img {
             max-width: 80%; /* Set the image's maximum width to 100% of its container */
             max-height: 80%; /* Set the image's maximum height to 100% of its container */
+        }
+        /* Space for images in the main content area:*/
+        .image-space02 {
+            flex: 0 0   23%;
+            background-color: #f1f1f1; /* Change to your preferred color */
+            text-align: center;
+            align-items: stretch;
+        }
+        /* Setting the size of the profile image. */
+        .image-space02 img {
+            max-width: 100%; /* Set the image's maximum width to 100% of its container */
+            max-height: 100%; /* Set the image's maximum height to 100% of its container */
         }
         /* Place contact info at the bottom of the colored bar. */
         .contact-info {
@@ -174,11 +186,18 @@
                     Despite the fact that a personal website is supposed to give an overview of one's professional capabilities (i.e. a verbose version of a CV), an important feature of this personal website will be, I hope, the scientific blogging aspect of it.
                     I like trying to explain difficult concepts in physics using analogies and simpler underlying concepts. Such explanations benefit both the <i>explainer</i> and the <i>explainee</i>(!) by placing the concept on firm foundations.
                 </p>
-                <p>
-                </p>
+                <br>
                 <p>
                     This website is currently under construction. The rest is to follow (hopefully) very quickly.
                 </p>
+                <br>
+                <p>
+                    As the website is developing, please enjoy a random collage of some of my past projects below!
+                </p>
+                <div class="image-space02">
+                    <p class="distance-top"></p>
+                    <img src="Images/drawing.png" alt="Collage from my various projects">
+                </div>
             </div>
     <div class="image-space">
     <p class="distance-top"></p>
