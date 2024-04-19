@@ -416,7 +416,7 @@
         <div class="outline-text-2" id="text-1">
         <p>
         A few days ago, in an attempt to explain <i>recursion</i> in computer programming, I came up
-        with a recursive algorithm to <b><b>cover</b></b> a half-circle with traingles. As I kept on doing
+        with a recursive algorithm to <b><b>cover</b></b> a half-circle with triangles. As I kept on doing
         some basic calculations around this idea using absurdly simple mathematics, I saw that this method of
         covering can be used to create a recursive formula for calculating \(\frac{\pi}{2}\), which
         can also be further evaluated to a new infinite sum that evaluates to \(\frac{\pi^2}{4}\).
@@ -444,7 +444,10 @@
         \begin{equation}
         \frac{2}{\pi} = \frac{\sqrt{2}}{2}\times\frac{\sqrt{2+\sqrt{2}}}{2}\times\frac{\sqrt{2+\sqrt{2+\sqrt{2}}}}{2}\dots
         \end{equation}
-        
+        <p>
+          I found this old paper that gives an interesting review about the history of the $\pi$ and some tricks for further calculations:
+          "Dence, Joseph B., and Thomas P. Dence. “<a href="https://doi.org/10.5951/MT.86.2.0121">A Rapidly Converging Recursive Approach to Pi.</a>” The Mathematics Teacher 86, no. 2 (1993): 121–24."
+        </p>
         <p>
         Now, the algorithm I will advance here, if looked at closely, is the very same thing: the
         colored areas approximating the half circle do in fact belong to polygons of higher and
@@ -481,8 +484,8 @@
         </blockquote>
         
         <p>
-        The intersrting feature of both these theorems is that they do not at all appear to have
-        geometrical roots upon a rudimentary analysis. But I will show below that they both foloow
+        The interesting feature of both these theorems is that they do not at all appear to have
+        geometrical roots upon a rudimentary analysis. But I will show below that they both follow
         from a simple geometrical construction.
         </p>
         </div>
@@ -511,13 +514,13 @@
         
         <p>
         The rest of the algorithm follows by repeating the same process with the free standing
-        sides of the first traingle:
+        sides of the first triangle:
         </p>
         <ol class="org-ol">
         <li>Find the mid-point of the sides;</li>
         <li>Move perpendicular to the side until intersecting the circle;</li>
         <li>Create a new triangle with the new point and the two original points of the original
-        traingle;</li>
+        triangle;</li>
         <li>Repeat for the remaining sides.</li>
         </ol>
         
@@ -544,8 +547,8 @@
         
         <p>
         where \(a_m\) is the area of <b><b>all the triangles constructed in the</b></b> \(m\) <b><b>-th
-        step</b></b>. The fact that we can <i>see</i> how our trianlges are filling up the half-circle
-        withouyt leaving behind any voids, means that:
+        step</b></b>. The fact that we can <i>see</i> how our triangles are filling up the half-circle
+        without leaving behind any voids, means that:
         </p>
         
         \begin{equation}
@@ -559,7 +562,7 @@
         
         <p>
         We can immediately prove the recursive formula in <b><b>theorem 1</b></b>, if we take a closer look
-        at the heights and bases of the trangles we construct as we move forward step by step in
+        at the heights and bases of the triangles we construct as we move forward step by step in
         our construction algorithm:
         </p>
         
@@ -760,7 +763,7 @@
         1 + 1 + 16\sin^4(\frac{\pi}{2^3}) + \dots + 4^{n-2}\sin^4(\frac{\pi}{2^{n}})+4^{n-1}\sin^4(\frac{\pi}{2^{n+1}}) + \dots = \frac{\pi^2}{4}
         \end{equation}
         <p>
-        which can be rewritten with lemma as folows, proving <b><b>theorem 2</b></b>:
+        which can be rewritten with lemma as follows, proving <b><b>theorem 2</b></b>:
         </p>
         \begin{equation}
         1 + 1 + (2-\sqrt{2})^2 + 4(2-\sqrt{2 + \sqrt{2}})^2 + \dots = \frac{\pi^2}{4}
